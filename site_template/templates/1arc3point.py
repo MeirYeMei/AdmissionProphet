@@ -8,6 +8,10 @@ class OneArc3PointTemplate(BaseTemplate):
         self.root_url = [
             'https://www.1point3acres.com/bbs/thread-471012-1-1.html'
         ]
+        driver = self.get_driver_instance()
+        driver.get("http://www.1point3acres.com")
+        cookie = {‘name’: ‘foo’, ‘value’: ‘bar’}
+        driver.add_cookie(cookie)
 
 
 
